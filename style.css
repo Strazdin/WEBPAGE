@@ -1,46 +1,59 @@
 * {
     font-family:'Times New Roman', Times, serif;
-    /* color: white; */
+    color: hsl(166, 92%, 10%);
 }
 
-header {
-    /* padding: 1px; */
-    background-color: hsl(165, 52%, 40%);
+body {
+    margin: 0px;
 }
 
 /* h1, h2, h3 */
+#site_header {
+    background-color: hsl(165, 52%, 40%);
+    margin: 0px;
+}
 
 nav {
     background-color: hsl(165, 52%, 70%);
+    margin: 12px 0px 0px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0px 60px;
+}
+
+nav a {
+    display: block;
+    padding: 21px 16px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+nav a:visited {
+    background-color: hsl(170, 50%, 50%);
+    color: hsl(0, 0%, 100%)
+}
+
+nav a:hover {
+    background-color: hsl(167, 50%, 50%);
 }
 
 main {
-    /* width: 100%; */
-    min-width: 600px;
-    max-width: 1400px;
+    min-width: 800px;
+    /* max-width: 1600px; */
 
-    min-height: calc(100vh - 245.51px);
+    min-height: calc(100vh - 211.719px);
 
-    /* margin: 20px auto; */
+    margin: 12px auto;
 }
-
-/* .left_menu {
-    box-sizing: border-box;
-    display: inline-block;
-    padding: 16px;
-    vertical-align: top;
-    text-align: justify;
-    background-color: hsl(165, 70%, 70%);
-}
-
-.right_menu {
-    box-sizing: border-box;
-    display: inline-block;
-    padding: 16px;
-    vertical-align: top;
-    text-align: justify;
-    background-color: hsl(165, 70%, 70%);
-} */
 
 .right_menu {
     writing-mode: vertical-lr; 
@@ -58,21 +71,38 @@ article, aside {
     background-color: hsl(165, 70%, 70%);
 }
 
+span {
+    padding: 5px 40px;
+}
+
+#aside_2, #aside_1 {
+    padding-top: 60px;
+    margin-bottom: 50px;
+    float: left;
+    clear: both;
+
+}
+
 section {
+    padding: 1px 50px 50px 75px;
+    margin: 12px 40px;
     background-color: hsl(165, 100%, 70%); 
 }
 
 article {
-    width: calc(70% - 32px - .56em);
+    width: calc(70% - 27.1px - .56em);
     /* width: 60%; */
+    padding: 0px 40px 50px 40px;
     margin: 0 16px;
 }
 
 aside {
     width: 20%;
+    margin: 12px, 0px;
 }
 
 footer {
+    margin: 0px;
     padding: 20px;
     background-color: hsl(165, 52%, 70%);
 }
